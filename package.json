@@ -1,7 +1,7 @@
 {
-  "name": "nuxt.ts-template",
-  "version": "1.0.0",
-  "description": "Application template using Nuxt.js with TypeScript",
+  "name": "nuxt.ts-blog",
+  "version": "0.0.1",
+  "description": "Blog system using Nuxt.js with TypeScript",
   "author": "basd4g",
   "private": true,
   "scripts": {

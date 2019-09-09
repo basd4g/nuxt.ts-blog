@@ -1,6 +1,6 @@
-# nuxt.ts-template
+# nuxt.ts-blog
 
-> Application template using Nuxt.js with TypeScript
+> Blog system using Nuxt.js with TypeScript
 
 ## Build Setup
 
