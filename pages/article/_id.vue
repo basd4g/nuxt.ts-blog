@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Article v-bind:articleId="$route.params.id"></Article>
+      <Article v-bind:articleId="$route.params.id" v-bind:articleObject="articleObject"></Article>
     </div>
    
 </template>
@@ -15,6 +15,27 @@ import Article from '~/components/Article.vue'
   }
 })
 export default class Index extends Vue {
+  articleObject: Object = {
+    "title": "",
+    "date": "",
+    "tags": "",
+    "bodyContent": "",
+    "bodyHtml": "",
+    "dir": "",
+    "base": "",
+    "ext": "",
+    "sourceBase": "",
+    "sourceExt": ""
+  }
+  async asyncData ({ params }){
+    let articleObject = await require('~/assets/article/sample-article1/index.json')
+    console.log(articleObject)
+    return { articleObject }
+  }
 }
+
+/*
+    
+*/
 </script>
  
